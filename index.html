@@ -15,33 +15,34 @@
 <body>
 <div class="container">
     <div class="result_calculation">
-        <div class="calculation">2+7</div>
+        <input type="text" class="calculation" value="" placeholder="Введите вычисление">
         <div class="result">9</div>
     </div>
     <div class="divider"></div>
     <ul class="calculator-items">
-        <li class="calculator-item red-button">C</li>
-        <li class="calculator-item green-color-symbol">()</li>
-        <li class="calculator-item green-color-symbol">%</li>
-        <li class="calculator-item green-color-symbol">/</li>
-        <li class="calculator-item">7</li>
-        <li class="calculator-item">8</li>
-        <li class="calculator-item">9</li>
-        <li class="calculator-item green-color-symbol">*</li>
-        <li class="calculator-item">4</li>
-        <li class="calculator-item">5</li>
-        <li class="calculator-item">6</li>
-        <li class="calculator-item green-color-symbol">-</li>
-        <li class="calculator-item">1</li>
-        <li class="calculator-item">2</li>
-        <li class="calculator-item">3</li>
-        <li class="calculator-item green-color-symbol">+</li>
-        <li class="calculator-item">+/-</li>
-        <li class="calculator-item">0</li>
-        <li class="calculator-item">.</li>
-        <li class="calculator-item green-button">=</li>
+        <li class="calculator-item red-button" id="clear">C</li>
+        <li class="calculator-item green-color-symbol" id="parentheses">()</li>
+        <li class="calculator-item green-color-symbol" id="percent">%</li>
+        <li class="calculator-item green-color-symbol" id="divide">/</li>
+        <li class="calculator-item" id="7">7</li>
+        <li class="calculator-item" id="8">8</li>
+        <li class="calculator-item" id="9">9</li>
+        <li class="calculator-item green-color-symbol" id="multiply">*</li>
+        <li class="calculator-item" id="4">4</li>
+        <li class="calculator-item" id="5">5</li>
+        <li class="calculator-item" id="6">6</li>
+        <li class="calculator-item green-color-symbol" id="subtract">-</li>
+        <li class="calculator-item" id="1">1</li>
+        <li class="calculator-item" id="2">2</li>
+        <li class="calculator-item" id="3">3</li>
+        <li class="calculator-item green-color-symbol" id="add">+</li>
+        <li class="calculator-item" id="plus-minus">+/-</li>
+        <li class="calculator-item" id="0">0</li>
+        <li class="calculator-item" id="decimal">.</li>
+        <li class="calculator-item green-button" id="equals">=</li>
     </ul>
 </div>
-<script src="scripts/main.js"></script>
+<script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/helpers.js"></script>
 </body>
 </html>

@@ -52,7 +52,9 @@ body{
     font-size: 48px;
 }
 .calculation{
-    font-size: 48px;
+    font-size: 30px;
+    border: none;
+    text-align: right;
 }
 .result_calculation{
     display: flex;
