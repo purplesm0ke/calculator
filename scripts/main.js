@@ -1,4 +1,6 @@
 import {isValidNumber} from "./helpers.js";
+import {isValidMark} from "./helpers.js";
+
 
 const buttonList = document.querySelector('ul');
 const buttons = buttonList.childNodes
@@ -48,6 +50,8 @@ buttonList.addEventListener('click', (event) => {
         })
     }
     if(operationIds.includes(event.target.id)){
+        if (!isValidMark((inputField.value || "") + value)) return;
+
         inputField.value += value
     }
 
