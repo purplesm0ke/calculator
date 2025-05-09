@@ -1,4 +1,4 @@
-import {isValidNumber} from "./helpers.js";
+import {getNumbers, isValidNumber} from "./helpers.js";
 import {isValidMark} from "./helpers.js";
 
 
@@ -32,27 +32,16 @@ buttonList.addEventListener('click', (event) => {
     }
     if (event.target.id === "equals"){
         console.log("result", inputField.value)
-
         let calculation = inputField.value
         let newCalculation = calculation.split('')
         console.log('cal', calculation)
         console.log('new', newCalculation)
-        newCalculation.map((elem) => {
-            if (isValidNumber(elem)){
-                num = elem
-                console.log('num', num)
-            }
-            if (!isValidNumber(elem)){
-                mark = elem
-                console.log('mark', mark)
-            }
-            return elem
-        })
-    }
+        const numbers = getNumbers(newCalculation)
+        console.log("ready result in main:", numbers)
+        }
     if(operationIds.includes(event.target.id)){
         if (!isValidMark((inputField.value || "") + value)) return;
-
         inputField.value += value
-    }
+        }
 
 })
