@@ -25,7 +25,6 @@ export const getNumbers = (string) => {
     for (let i = 0; i < string.length; i++) {
         if (isNaN(string[i])===false) {
             number += string[i];
-            console.log('number',number)
         }
         if (isNaN(string[i])===true){
             result.push(Number(number));
