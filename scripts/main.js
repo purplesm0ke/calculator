@@ -17,6 +17,7 @@ buttonList.addEventListener('click', (event) => {
     }
     if(event.target.id === "clear"){
         inputField.value = ''
+        result.textContent = 'Результат'
     }
     if (event.target.id === "equals"){
         let calculation = inputField.value
